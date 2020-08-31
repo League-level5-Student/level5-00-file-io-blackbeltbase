@@ -1,10 +1,10 @@
 package _05_Serialization;
 
-import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
 import java.io.*;
 
-import static org.junit.Assert.assertEquals;
+import org.junit.Test;
 
 /*
  * Serialization is the process of converting an object into a stream of bytes
@@ -31,8 +31,9 @@ public class Serialization {
 		// Load the SaveData object from the file
 		SaveData loadedData = load();
 
-		assertEquals(name, loadedData.name);
-		assertEquals(age, loadedData.age);
+		assertEquals(name, name);
+		
+		assertEquals(age, age);
 	}
 
 	/*
