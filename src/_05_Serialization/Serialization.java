@@ -18,8 +18,8 @@ import org.junit.Test;
  * Challenge: Complete the SaveData class so that the test passes.
  */
 public class Serialization {
-	private static final String DATA_FILE = "src/_04_Serialization/saved.dat";
-
+	private static final String DATA_FILE = "src/_05_Serialization/saved.dat";
+	
 	@Test
 	public void test() {
 		String name = "Jeff";
@@ -30,10 +30,10 @@ public class Serialization {
 
 		// Load the SaveData object from the file
 		SaveData loadedData = load();
-
-		assertEquals(name, name);
 		
-		assertEquals(age, age);
+		assertEquals(loadedData.name, name);
+		
+		assertEquals(loadedData.age, age);
 	}
 
 	/*
